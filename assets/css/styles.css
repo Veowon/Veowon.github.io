@@ -1,0 +1,295 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: 'Graphik LCG Regular';
+    src: url('../fonts/GraphikLCG-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik LCG Bold';
+    src: url('../fonts/GraphikLCG-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Шапка */
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header_logo > h5 {
+    font-family: 'Graphik LCG Bold'!important;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.header_menu > li > a {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+}
+
+.navbar-collapse {
+    height: 100vh;
+    background-color: white;
+}
+
+.navbar-collapse > ul > li {
+    border-bottom: 1px solid #ECEFF2;
+}
+
+.navbar-collapse > ul > li:first-child {
+    border-top: 1px solid #ECEFF2;
+}
+
+.navbar-collapse > ul > li > a {
+    color: #83898F;
+}
+
+/* Обложка */
+
+.main_img {
+    background-image: linear-gradient(to top, #2a6ceac4, #2a6ceac4), url("../img/Lunch_atop_a_Skyscraper_1.png");
+    min-height: 960px;
+    background-size: cover;
+    color: white;
+
+}
+
+.main_img_title > h1 {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 52px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.main_img_title > p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.main_img_button > button {
+    color: #191C1F;
+    background-color: #ECEFF2;
+    padding: 20px 40px 20px 40px;
+    border-radius: 4px;
+    border: 0px solid;
+    transition: 0.3s;
+}
+
+.main_img_button > button:focus {
+    outline: none;
+}
+
+.main_img_button > button:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.5);
+    cursor: pointer;
+}
+
+.main_img_button > button > h5 {
+    margin: 0;
+    font-family: 'Graphik LCG Bold'!important;
+}
+
+/* "Как это работает" */
+
+.benefits_img_2 {
+    top: 0;
+}
+
+.benefits_title > h2 {
+    font-family: 'Graphik LCG Bold'!important;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.benefits_item > div > h6 {
+    font-family: 'Graphik LCG Bold'!important;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.benefits_item > div > p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5E646A;
+}
+
+.benefits_infobox_text > h3 {
+    font-family: 'Graphik LCG Bold'!important;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.benefits_infobox_text > p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #5E646A;
+}
+
+/* Отзывы */
+
+.reviews {
+    background-color: #F6F8FA;
+}
+
+.reviews_item {
+    background-color: white;
+    box-shadow: 0px 5px 24px 0px #0000001A;
+    border-radius: 8px;
+    max-width: 30%;
+    transition: 0.3s;
+}
+
+@media (max-width:992px) {
+    .benefits_img_wrapper img {
+        width: 100%;
+        left: 0;
+    }
+
+    .reviews_item {
+        max-width: 45%;
+    }
+
+    .benefits_infobox_text > h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main_img_title > h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    .reviews_item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:375px) {
+    .benefits_title > h2 {
+        font-family: 'Graphik LCG Bold'!important;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+}
+
+.reviews_item:hover {
+    box-shadow: 0px 15px 24px 0px #0000001A;
+    cursor: pointer;
+}
+
+.reviews_item_name > h6 {
+    font-family: 'Graphik LCG Bold'!important;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.reviews_item_name > p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #5E646A;
+}
+
+.reviews_item_description p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #191C1F; 
+}
+
+.carousel-control-prev {
+    margin-left: -120px!important;
+}
+
+.carousel-control-next {
+    margin-right: -120px!important;
+}
+
+.carousel-indicators .active {
+    background-color: #2A6CEA!important;
+}
+
+.carousel-indicators li {
+    margin: 0px 10px 0px 10px!important;
+    width: 8px!important;
+    height: 8px!important;
+    border-radius: 25px!important;
+    background-color: #C2C8CD!important;
+}
+
+.carousel-indicators:hover {
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    bottom: 20px!important;
+}
+
+.carousel-inner,
+.carousel-item-next,
+.carousel-item-prev {
+    padding: 30px 0px 90px 0px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../img/reviews/controls/left.png")!important;
+    height: 40px!important;
+    background-size: auto!important;
+    transition: 0.2s;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon {
+    background-image: url("../img/reviews/controls/left-hover.png")!important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/reviews/controls/right.png")!important;
+    height: 40px!important;
+    background-size: auto!important;
+    transition: 0.2s;
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-image: url("../img/reviews/controls/right-hover.png")!important;
+}
+
+/* Подвал */
+
+.footer_title p {
+    font-family: 'Graphik LCG Regular'!important;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #191C1F;
+    margin: 0px;
+}
+
+footer {
+    border-top: 1px solid #ECEFF2;
+}
